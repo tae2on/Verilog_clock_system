@@ -1,0 +1,240 @@
+/* UART Transmitter '8-N-1'(8 bit data, one stop bit, and no parity bit.*/
+
+module uart_tx
+	#(parameter CLKS_PER_BIT, STOP_BIT)
+	(
+	clk,
+	rst,
+	tx_en,
+	dip,
+	din,
+	tx,
+	tx_busy,
+	en_alarm
+	);
+	
+	input			clk;
+	input			rst;
+	input			tx_en;
+	input	[7:0]	din;
+	input			en_alarm;
+	input	[3:0]	dip;
+	output		tx;
+	output		tx_busy;
+
+	//Declation of the status of the FSM
+	parameter	 IDLE_TX	  = 2'b00;
+	parameter	 START_TX  = 2'b01;
+	parameter	 DATA_TX	  = 2'b10;
+	parameter	 STOP_TX	  = 2'b11;
+	
+	wire	[7:0]  din;
+	wire	[3:0]	 dip;
+	reg			 tx;
+	reg	[15:0] cnt_clk;
+	reg	[2:0]	 bit_index;
+	reg	[7:0]	 rdata;
+	reg	[1:0]	 state;
+	reg	[1:0]	 next_state;
+	reg			 tx_rdy;
+	reg			 tx_busy;
+	reg			 tx_alarm;
+	
+	initial begin 
+		tx = 1'b1;
+	end 
+	
+	always @(en_alarm) begin
+		if	(en_alarm == 1'b1 && dip == 4'b0000)
+			tx_alarm	<=	1'b1;
+		else	
+			tx_alarm	<= 1'b0;
+	end
+	
+	
+	// FSM for UART Transmitter
+	always @(posedge clk or negedge rst) begin 
+		if (!rst)
+			state				<= IDLE_TX;
+		else
+			state				<= next_state;
+		end
+		
+	always @(*) begin 
+		case (state)
+			IDLE_TX : begin
+				if (tx_en == 1'b1)
+					next_state		 	<= START_TX;
+				else
+					next_state			<= IDLE_TX;
+				end
+				
+			START_TX : begin 
+			if (tx_rdy == 1 && tx_alarm == 1'b1) begin 
+				// Wait CLKS_PER_BIT-1 clock cycles for start bit to finish 
+				if (cnt_clk < CLKS_PER_BIT-1)
+					next_state		<= START_TX;
+				else
+					next_state		<= DATA_TX;
+				end
+			else
+				next_state			<= IDLE_TX;
+			end
+			
+			DATA_TX : begin 
+				if (cnt_clk < CLKS_PER_BIT-1)
+					next_state		<= DATA_TX;
+				else begin 
+					if (bit_index < 3'h7 && tx_alarm == 1'b1)
+						next_state	<= DATA_TX;
+					else
+						next_state 	<= STOP_TX;
+				end
+			end
+			
+			STOP_TX : begin 
+				if (STOP_BIT == 2'd1)
+					if (cnt_clk < CLKS_PER_BIT-1)
+						next_state		<= STOP_TX;
+					else if (tx_en == 1'd1)
+						next_state 		<= START_TX;
+					else
+						next_state		<= IDLE_TX;
+				else
+				   if (cnt_clk < (CLKS_PER_BIT-1)*2)
+						next_state		<= STOP_TX;
+					else if (tx_en == 1'd1)
+						next_state 		<= START_TX;
+					else
+						next_state		<= IDLE_TX;
+				end
+		
+			default : next_state		<= IDLE_TX;
+		endcase
+	end
+
+// Counters for FSM
+		always @ (posedge clk or negedge rst) begin 
+			if (!rst) begin 
+				cnt_clk						<= 0;
+				bit_index					<= 0;
+				rdata							<= 0;
+			end
+			else begin 
+				case(state)
+					IDLE_TX : begin 
+						rdata					<= 0;
+					end
+					
+					START_TX : begin 
+						rdata					<= din;
+						
+						if (cnt_clk < CLKS_PER_BIT-1)
+							cnt_clk			<= cnt_clk + 1'b1;
+						else
+							cnt_clk			<= 0;
+					end
+						
+					DATA_TX : begin 
+						if (cnt_clk < CLKS_PER_BIT-1)
+							cnt_clk			<= cnt_clk + 1'b1;
+						else begin 
+							cnt_clk			<= 0;
+							
+							if (bit_index < 3'h7)
+								bit_index	<= bit_index + 1'b1;
+							else
+								bit_index	<= 0;
+							end
+						end
+					
+					STOP_TX : begin 
+						if(STOP_BIT == 2'd1)
+							if (cnt_clk < (CLKS_PER_BIT-1))
+								cnt_clk			<= cnt_clk + 1'b1;
+							else
+								cnt_clk 			<= 0;
+						else
+							if (cnt_clk < (CLKS_PER_BIT-1)*2)
+								cnt_clk			<= cnt_clk + 1'b1;
+							else
+								cnt_clk			<= 0;
+						end
+					
+					default : cnt_clk 	<= cnt_clk;
+				endcase
+			end
+		end
+		
+		//Outputs of UART Transmitter
+		always @(posedge clk or negedge rst) begin 
+			if (!rst) begin 
+				tx								<= 1'b1;
+				tx_rdy						<= 1'b1;
+				tx_busy						<= 1'b0;
+			end
+			else begin 
+				case (state)
+					IDLE_TX : begin 
+						tx						<= 1'b1;
+						
+						if (tx_en == 1 ) begin
+							tx_rdy			<= 1'b1;
+							tx_busy			<= 1'b0;
+						end
+						else begin 
+							tx_rdy			<= tx_rdy;
+							tx_busy			<= 1'b0;
+						end
+					end
+					
+					START_TX : begin 
+						tx						<= 1'b0;
+						
+						if (tx_en == 1 ) begin 
+							tx_rdy			<= 1'b1;
+							tx_busy			<= 1'b1;
+						end
+						else begin 
+							tx_rdy			<= tx_rdy;
+							tx_busy			<= 1'b1;
+						end
+					end
+					
+					DATA_TX : begin 
+						if (tx_alarm == 1'b1) begin
+							tx					<= rdata[bit_index];
+							tx_busy			<= 1'b1;
+						end
+					end
+					
+					STOP_TX : begin 
+						tx					<= 1'b1;
+						if(STOP_BIT == 2'd1)
+							if(cnt_clk < (CLKS_PER_BIT-1)) begin
+								tx_rdy			<= 1'b0;
+								tx_busy			<= 1'b1;
+							end
+							else begin 
+								tx_rdy			<= 1'b1;
+								tx_busy			<= 1'b0;
+							end
+						else
+							if(cnt_clk < (CLKS_PER_BIT-1)*2) begin
+								tx_rdy			<= 1'b0;
+								tx_busy			<= 1'b1;
+							end
+							else begin 
+								tx_rdy			<= 1'b1;
+								tx_busy			<= 1'b0;
+							end
+				end
+					
+				default : tx 		<= tx;
+			endcase
+		end
+	end
+			
+endmodule 
+
+

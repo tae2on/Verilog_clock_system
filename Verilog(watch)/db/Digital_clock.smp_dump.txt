@@ -1,0 +1,26 @@
+
+State Machine - |Digital_clock|uart_rx:E4|state
+Name state.STOP_RX state.DATA_RX state.START_RX state.IDLE_RX 
+state.IDLE_RX 0 0 0 0 
+state.START_RX 0 0 1 1 
+state.DATA_RX 0 1 0 1 
+state.STOP_RX 1 0 0 1 
+
+State Machine - |Digital_clock|uart_tx:E3|state
+Name state.STOP_TX state.DATA_TX state.START_TX state.IDLE_TX 
+state.IDLE_TX 0 0 0 0 
+state.START_TX 0 0 1 1 
+state.DATA_TX 0 1 0 1 
+state.STOP_TX 1 0 0 1 
+
+State Machine - |Digital_clock|lcd_driver:DRV|state
+Name state.LINE2 state.PRINT_STRING state.MODE_SET state.DISP_ON state.DISP_CLEAR state.DISP_OFF state.FUNC_SET state.IDLE state.RETURN_HOME 
+state.IDLE 0 0 0 0 0 0 0 0 0 
+state.FUNC_SET 0 0 0 0 0 0 1 1 0 
+state.DISP_OFF 0 0 0 0 0 1 0 1 0 
+state.DISP_CLEAR 0 0 0 0 1 0 0 1 0 
+state.DISP_ON 0 0 0 1 0 0 0 1 0 
+state.MODE_SET 0 0 1 0 0 0 0 1 0 
+state.PRINT_STRING 0 1 0 0 0 0 0 1 0 
+state.LINE2 1 0 0 0 0 0 0 1 0 
+state.RETURN_HOME 0 0 0 0 0 0 0 1 1 

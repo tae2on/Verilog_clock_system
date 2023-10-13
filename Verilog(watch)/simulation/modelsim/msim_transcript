@@ -1,0 +1,269 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Digital_clock_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/digital_clock.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:17 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/digital_clock.v 
+# -- Compiling module Digital_clock
+# 
+# Top level modules:
+# 	Digital_clock
+# End time: 23:03:17 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/switch.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:17 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/switch.v 
+# -- Compiling module switch
+# 
+# Top level modules:
+# 	switch
+# End time: 23:03:17 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/out_data.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:17 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/out_data.v 
+# -- Compiling module out_data
+# 
+# Top level modules:
+# 	out_data
+# End time: 23:03:18 on Jun 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/debouncer_clk.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:18 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/debouncer_clk.v 
+# -- Compiling module debouncer_clk
+# 
+# Top level modules:
+# 	debouncer_clk
+# End time: 23:03:18 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/clk_div.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:18 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/clk_div.v 
+# -- Compiling module clk_div
+# 
+# Top level modules:
+# 	clk_div
+# End time: 23:03:18 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/d_ff.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:18 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/d_ff.v 
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	d_ff
+# End time: 23:03:19 on Jun 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/en_clk.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:19 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/en_clk.v 
+# -- Compiling module en_clk
+# 
+# Top level modules:
+# 	en_clk
+# End time: 23:03:19 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/watch_time.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:19 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/watch_time.v 
+# -- Compiling module watch_time
+# 
+# Top level modules:
+# 	watch_time
+# End time: 23:03:19 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/mode_watch.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:19 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/mode_watch.v 
+# -- Compiling module mode_watch
+# 
+# Top level modules:
+# 	mode_watch
+# End time: 23:03:19 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/place_2value.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:20 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/place_2value.v 
+# -- Compiling module place_2value
+# 
+# Top level modules:
+# 	place_2value
+# End time: 23:03:20 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/place_3value.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:20 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/place_3value.v 
+# -- Compiling module place_3value
+# 
+# Top level modules:
+# 	place_3value
+# End time: 23:03:20 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/mode_watch_set.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:20 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/mode_watch_set.v 
+# -- Compiling module mode_watch_set
+# 
+# Top level modules:
+# 	mode_watch_set
+# End time: 23:03:20 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/mode_uart_tx_alarm.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:20 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/mode_uart_tx_alarm.v 
+# -- Compiling module mode_uart_tx_alarm
+# 
+# Top level modules:
+# 	mode_uart_tx_alarm
+# End time: 23:03:20 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/mode_uart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:21 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/mode_uart.v 
+# -- Compiling module mode_uart
+# 
+# Top level modules:
+# 	mode_uart
+# End time: 23:03:21 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/en_clk_lcd.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:21 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/en_clk_lcd.v 
+# -- Compiling module en_clk_lcd
+# 
+# Top level modules:
+# 	en_clk_lcd
+# End time: 23:03:21 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/lcd_driver.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:21 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/lcd_driver.v 
+# -- Compiling module lcd_driver
+# 
+# Top level modules:
+# 	lcd_driver
+# End time: 23:03:21 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/en_txsig.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:21 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/en_txsig.v 
+# -- Compiling module en_txsig
+# 
+# Top level modules:
+# 	en_txsig
+# End time: 23:03:22 on Jun 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/bcd_counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:22 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/bcd_counter.v 
+# -- Compiling module bcd_counter
+# 
+# Top level modules:
+# 	bcd_counter
+# End time: 23:03:22 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/bcd2ascii.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:22 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/bcd2ascii.v 
+# -- Compiling module bcd2ascii
+# 
+# Top level modules:
+# 	bcd2ascii
+# End time: 23:03:22 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/uart_tx.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:33 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/uart_tx.v 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 23:03:34 on Jun 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Teamproject {E:/Teamproject/uart_rx.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:34 on Jun 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Teamproject" E:/Teamproject/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 23:03:34 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work E:/Teamproject/simulation/modelsim/tb_Digital_clok.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:54 on Jun 10,2022
+# vlog -reportprogress 300 -work work E:/Teamproject/simulation/modelsim/tb_Digital_clok.v 
+# -- Compiling module tb_watch_time
+# 
+# Top level modules:
+# 	tb_watch_time
+# End time: 23:03:54 on Jun 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Load canceled
+vlog -reportprogress 300 -work work E:/Teamproject/simulation/modelsim/tb_watch_time.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:05:07 on Jun 10,2022
+# vlog -reportprogress 300 -work work E:/Teamproject/simulation/modelsim/tb_watch_time.v 
+# -- Compiling module tb_watch_time
+# 
+# Top level modules:
+# 	tb_watch_time
+# End time: 23:05:08 on Jun 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -gui -l msim_transcript work.tb_watch_time
+# vsim -gui -l msim_transcript work.tb_watch_time 
+# Start time: 23:05:30 on Jun 10,2022
+# Loading work.tb_watch_time
+# Loading work.watch_time
+# ** Warning: (vsim-3017) E:/Teamproject/simulation/modelsim/tb_watch_time.v(14): [TFMPC] - Too few port connections. Expected 13, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_watch_time/TIME File: E:/Teamproject/watch_time.v
+# ** Warning: (vsim-3722) E:/Teamproject/simulation/modelsim/tb_watch_time.v(14): [TFMPC] - Missing connection for port 'transfer_time'.
+# ** Warning: (vsim-3722) E:/Teamproject/simulation/modelsim/tb_watch_time.v(14): [TFMPC] - Missing connection for port 'set_time'.
+# ** Warning: (vsim-3722) E:/Teamproject/simulation/modelsim/tb_watch_time.v(14): [TFMPC] - Missing connection for port 'week'.
+# ** Warning: (vsim-3722) E:/Teamproject/simulation/modelsim/tb_watch_time.v(14): [TFMPC] - Missing connection for port 'max_date'.
+add wave -position end  sim:/tb_watch_time/clk
+add wave -position end  sim:/tb_watch_time/rst
+add wave -position end  sim:/tb_watch_time/en_1hz
+add wave -position end  sim:/tb_watch_time/year
+add wave -position end  sim:/tb_watch_time/month
+add wave -position end  sim:/tb_watch_time/day
+add wave -position end  sim:/tb_watch_time/hour
+add wave -position end  sim:/tb_watch_time/min
+add wave -position end  sim:/tb_watch_time/sec
+run -all
+# Break key hit
+# Simulation stop requested.
+# End time: 23:06:02 on Jun 10,2022, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 5

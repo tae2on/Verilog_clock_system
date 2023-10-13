@@ -1,0 +1,31 @@
+/* 50Mhz -> 0.25 sec enable */
+
+module en_txsig (
+	clk,
+	rst,
+	en_sig);
+	
+	input				clk;
+	input				rst;
+	output			en_sig;
+	
+	reg				en_sig;
+	reg	[24:0]	cnt_en_sig;
+	
+	//Frequency divider (50MHZ -> 4Hz), enable signal
+	always @ (posedge clk or negedge rst) begin
+		if (!rst) begin
+			cnt_en_sig	<= 0;
+			en_sig		<= 0;
+		end
+		else if (cnt_en_sig == 25'd12499999) begin
+			cnt_en_sig	<= 0;
+			en_sig		<= 1'b1;
+		end
+		else begin
+			cnt_en_sig	<= cnt_en_sig + 1'b1;
+			en_sig		<= 0;
+		end
+	end
+	
+endmodule

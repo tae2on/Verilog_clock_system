@@ -1,0 +1,494 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Teamproject/simulation/modelsim
+vbcd2ascii
+Z1 !s110 1654869802
+!i10b 1
+!s100 ZVQV_H2K=5nDI8S6SN5>10
+I_LYUn]K^2?IXVieUB>SoC2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1654445206
+8E:/Teamproject/bcd2ascii.v
+FE:/Teamproject/bcd2ascii.v
+L0 3
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1654869802.000000
+!s107 E:/Teamproject/bcd2ascii.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/bcd2ascii.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+E:/Teamproject
+Z8 tCvgOpt 0
+vbcd_counter
+R1
+!i10b 1
+!s100 _n9AnXGd:`=c6?<Q<NdMj2
+I`kloVo=AJbMRg;;3DR@aH2
+R2
+R0
+R3
+8E:/Teamproject/bcd_counter.v
+FE:/Teamproject/bcd_counter.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Teamproject/bcd_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/bcd_counter.v|
+!i113 1
+R6
+R7
+R8
+vclk_div
+Z9 !s110 1654869798
+!i10b 1
+!s100 lPi[=k1T@LAJPBe@eifPB3
+IM<l<0Hj]Tfho<g6XD20RM1
+R2
+R0
+Z10 w1654615250
+8E:/Teamproject/clk_div.v
+FE:/Teamproject/clk_div.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z11 !s108 1654869798.000000
+!s107 E:/Teamproject/clk_div.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/clk_div.v|
+!i113 1
+R6
+R7
+R8
+vd_ff
+R9
+!i10b 1
+!s100 WRT>kNnf>jJcBS>UoQCI[2
+Id?j0I_jQ7okSnQgXodU>o2
+R2
+R0
+w1654869458
+8E:/Teamproject/d_ff.v
+FE:/Teamproject/d_ff.v
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 E:/Teamproject/d_ff.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/d_ff.v|
+!i113 1
+R6
+R7
+R8
+vdebouncer_clk
+R9
+!i10b 1
+!s100 R?ZHY4[EXSX`h7FYLlmX=1
+I46OJNZJ[Q_A`k9`0Z2TRR1
+R2
+R0
+R10
+8E:/Teamproject/debouncer_clk.v
+FE:/Teamproject/debouncer_clk.v
+L0 2
+R4
+r1
+!s85 0
+31
+R11
+!s107 E:/Teamproject/debouncer_clk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/debouncer_clk.v|
+!i113 1
+R6
+R7
+R8
+vDigital_clock
+Z12 !s110 1654869797
+!i10b 1
+!s100 i:0QQ=ieoBo`fK8EzO9kZ2
+Imz8hP3a7FYdJc><dm_@La2
+R2
+R0
+w1654869248
+8E:/Teamproject/digital_clock.v
+FE:/Teamproject/digital_clock.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z13 !s108 1654869797.000000
+!s107 E:/Teamproject/digital_clock.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/digital_clock.v|
+!i113 1
+R6
+R7
+R8
+n@digital_clock
+ven_clk
+Z14 !s110 1654869799
+!i10b 1
+!s100 7zEXU7D?D;kd>g>f:>FHX2
+I3`=X?;e8i?W=T:742c9gF2
+R2
+R0
+R10
+8E:/Teamproject/en_clk.v
+FE:/Teamproject/en_clk.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z15 !s108 1654869799.000000
+!s107 E:/Teamproject/en_clk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/en_clk.v|
+!i113 1
+R6
+R7
+R8
+ven_clk_lcd
+Z16 !s110 1654869801
+!i10b 1
+!s100 ]N2eYkBj@dMSjZ[YVN2kW1
+IIeO7ACldH4W=U;0<fXYa@3
+R2
+R0
+Z17 w1654615248
+8E:/Teamproject/en_clk_lcd.v
+FE:/Teamproject/en_clk_lcd.v
+L0 2
+R4
+r1
+!s85 0
+31
+Z18 !s108 1654869801.000000
+!s107 E:/Teamproject/en_clk_lcd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/en_clk_lcd.v|
+!i113 1
+R6
+R7
+R8
+ven_txsig
+R16
+!i10b 1
+!s100 ^b<=c`KI3Hmb<^T7:?U_j0
+IoiKYH4@joXi1DQTgiGHUD0
+R2
+R0
+w1654610016
+8E:/Teamproject/en_txsig.v
+FE:/Teamproject/en_txsig.v
+L0 3
+R4
+r1
+!s85 0
+31
+R18
+!s107 E:/Teamproject/en_txsig.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/en_txsig.v|
+!i113 1
+R6
+R7
+R8
+vlcd_driver
+R16
+!i10b 1
+!s100 <JSMECVT46hM3[T=[CU0L2
+IzJDNFOXW:SKWIB_21V]kN1
+R2
+R0
+w1654869538
+8E:/Teamproject/lcd_driver.v
+FE:/Teamproject/lcd_driver.v
+L0 1
+R4
+r1
+!s85 0
+31
+R18
+!s107 E:/Teamproject/lcd_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/lcd_driver.v|
+!i113 1
+R6
+R7
+R8
+vmode_uart
+R16
+!i10b 1
+!s100 [WSVBL59=2@?k?JczDP8V3
+I0c;d7ENP3TCg1m@:?Ogk60
+R2
+R0
+w1654424962
+8E:/Teamproject/mode_uart.v
+FE:/Teamproject/mode_uart.v
+L0 1
+R4
+r1
+!s85 0
+31
+R18
+!s107 E:/Teamproject/mode_uart.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/mode_uart.v|
+!i113 1
+R6
+R7
+R8
+vmode_uart_tx_alarm
+Z19 !s110 1654869800
+!i10b 1
+!s100 cFg=^FfCcc[0`RRAK_eXj2
+I_8j^lIMj`h1O=Kb2ebVZ>0
+R2
+R0
+Z20 w1654615246
+8E:/Teamproject/mode_uart_tx_alarm.v
+FE:/Teamproject/mode_uart_tx_alarm.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z21 !s108 1654869800.000000
+!s107 E:/Teamproject/mode_uart_tx_alarm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/mode_uart_tx_alarm.v|
+!i113 1
+R6
+R7
+R8
+vmode_watch
+R14
+!i10b 1
+!s100 [;;MbWdmhjYJ[ocl5z80:3
+INXdGGX3OBaFlaR1=BJ_hl3
+R2
+R0
+w1654677438
+8E:/Teamproject/mode_watch.v
+FE:/Teamproject/mode_watch.v
+L0 1
+R4
+r1
+!s85 0
+31
+R15
+!s107 E:/Teamproject/mode_watch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/mode_watch.v|
+!i113 1
+R6
+R7
+R8
+vmode_watch_set
+R19
+!i10b 1
+!s100 =<5lHIS>GMIdU_Wa3ZS>@3
+IBMNWhX0^FSiEfbKRZJze_3
+R2
+R0
+Z22 w1654613400
+8E:/Teamproject/mode_watch_set.v
+FE:/Teamproject/mode_watch_set.v
+L0 1
+R4
+r1
+!s85 0
+31
+R21
+!s107 E:/Teamproject/mode_watch_set.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/mode_watch_set.v|
+!i113 1
+R6
+R7
+R8
+vout_data
+R9
+!i10b 1
+!s100 ]?9@InZ8VkH]j4B08eQ@e0
+IZnZl5Z`oKe8o_<;`RFK7n1
+R2
+R0
+R20
+8E:/Teamproject/out_data.v
+FE:/Teamproject/out_data.v
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 E:/Teamproject/out_data.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/out_data.v|
+!i113 1
+R6
+R7
+R8
+vplace_2value
+R19
+!i10b 1
+!s100 X7633keM_MBDhHMI54Yig1
+IbH<_7Uc;NQWC3S63;48cV3
+R2
+R0
+w1654613398
+8E:/Teamproject/place_2value.v
+FE:/Teamproject/place_2value.v
+L0 1
+R4
+r1
+!s85 0
+31
+R21
+!s107 E:/Teamproject/place_2value.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/place_2value.v|
+!i113 1
+R6
+R7
+R8
+vplace_3value
+R19
+!i10b 1
+!s100 8jU4nZ6j@992Tmd@ha^9H1
+I;h=M2VELKfHJ_dGK0Q:lb2
+R2
+R0
+R22
+8E:/Teamproject/place_3value.v
+FE:/Teamproject/place_3value.v
+L0 1
+R4
+r1
+!s85 0
+31
+R21
+!s107 E:/Teamproject/place_3value.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/place_3value.v|
+!i113 1
+R6
+R7
+R8
+vswitch
+R12
+!i10b 1
+!s100 GjOCOnFaX?Il9RdK?KZkK0
+ISf;=`l@hR>N:z6a4b7EWZ2
+R2
+R0
+R17
+8E:/Teamproject/switch.v
+FE:/Teamproject/switch.v
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 E:/Teamproject/switch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/switch.v|
+!i113 1
+R6
+R7
+R8
+vtb_watch_time
+!s110 1654869908
+!i10b 1
+!s100 maZfN@YM=>P>h?[ZHc4;U0
+I0zG5fALkSakZke6Gf:l?N2
+R2
+R0
+w1654869904
+8E:/Teamproject/simulation/modelsim/tb_watch_time.v
+FE:/Teamproject/simulation/modelsim/tb_watch_time.v
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1654869907.000000
+!s107 E:/Teamproject/simulation/modelsim/tb_watch_time.v|
+!s90 -reportprogress|300|-work|work|E:/Teamproject/simulation/modelsim/tb_watch_time.v|
+!i113 1
+o-work work
+R8
+vuart_rx
+!s110 1654869814
+!i10b 1
+!s100 Jl^CLlmHKFfSE`jPfWV]o1
+IYm8SRG`6>;Negj3J@7d>H2
+R2
+R0
+w1653399554
+8E:/Teamproject/uart_rx.v
+FE:/Teamproject/uart_rx.v
+L0 4
+R4
+r1
+!s85 0
+31
+!s108 1654869814.000000
+!s107 E:/Teamproject/uart_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/uart_rx.v|
+!i113 1
+R6
+R7
+R8
+vuart_tx
+!s110 1654869813
+!i10b 1
+!s100 kmSEPemOA0IQ8S??UUB`l3
+I2BAo3GXllW9W=P0C3dKa?2
+R2
+R0
+w1654689806
+8E:/Teamproject/uart_tx.v
+FE:/Teamproject/uart_tx.v
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1654869813.000000
+!s107 E:/Teamproject/uart_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/uart_tx.v|
+!i113 1
+R6
+R7
+R8
+vwatch_time
+R14
+!i10b 1
+!s100 Z`D058H4d;zH^<@Va]CIY2
+IdG]k9`zHaD4ToBA==o`<N0
+R2
+R0
+R10
+8E:/Teamproject/watch_time.v
+FE:/Teamproject/watch_time.v
+L0 1
+R4
+r1
+!s85 0
+31
+R15
+!s107 E:/Teamproject/watch_time.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Teamproject|E:/Teamproject/watch_time.v|
+!i113 1
+R6
+R7
+R8

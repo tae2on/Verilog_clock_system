@@ -1,0 +1,18 @@
+Warning (10273): Verilog HDL warning at watch_time.v(124): extended using "x" or "z" File: E:/Teamproject/watch_time.v Line: 124
+Warning (10273): Verilog HDL warning at watch_time.v(133): extended using "x" or "z" File: E:/Teamproject/watch_time.v Line: 133
+Warning (10273): Verilog HDL warning at watch_time.v(142): extended using "x" or "z" File: E:/Teamproject/watch_time.v Line: 142
+Warning (10273): Verilog HDL warning at watch_time.v(151): extended using "x" or "z" File: E:/Teamproject/watch_time.v Line: 151
+Warning (10273): Verilog HDL warning at watch_time.v(160): extended using "x" or "z" File: E:/Teamproject/watch_time.v Line: 160
+Warning (10273): Verilog HDL warning at watch_time.v(169): extended using "x" or "z" File: E:/Teamproject/watch_time.v Line: 169
+Warning (10268): Verilog HDL information at mode_watch.v(111): always construct contains both blocking and non-blocking assignments File: E:/Teamproject/mode_watch.v Line: 111
+Info (10281): Verilog HDL Declaration information at mode_watch.v(33): object "kor_hour" differs only in case from object "KOR_hour" in the same scope File: E:/Teamproject/mode_watch.v Line: 33
+Info (10281): Verilog HDL Declaration information at mode_watch.v(33): object "kor_day" differs only in case from object "KOR_day" in the same scope File: E:/Teamproject/mode_watch.v Line: 33
+Warning (10268): Verilog HDL information at place_2value.v(17): always construct contains both blocking and non-blocking assignments File: E:/Teamproject/place_2value.v Line: 17
+Warning (10268): Verilog HDL information at place_3value.v(19): always construct contains both blocking and non-blocking assignments File: E:/Teamproject/place_3value.v Line: 19
+Warning (10268): Verilog HDL information at mode_watch_set.v(95): always construct contains both blocking and non-blocking assignments File: E:/Teamproject/mode_watch_set.v Line: 95
+Info (10281): Verilog HDL Declaration information at mode_watch_set.v(36): object "kor_hour" differs only in case from object "KOR_hour" in the same scope File: E:/Teamproject/mode_watch_set.v Line: 36
+Info (10281): Verilog HDL Declaration information at mode_watch_set.v(36): object "kor_day" differs only in case from object "KOR_day" in the same scope File: E:/Teamproject/mode_watch_set.v Line: 36
+Warning (10268): Verilog HDL information at mode_uart_tx_alarm.v(96): always construct contains both blocking and non-blocking assignments File: E:/Teamproject/mode_uart_tx_alarm.v Line: 96
+Info (10281): Verilog HDL Declaration information at mode_uart_tx_alarm.v(36): object "kor_hour" differs only in case from object "KOR_hour" in the same scope File: E:/Teamproject/mode_uart_tx_alarm.v Line: 36
+Info (10281): Verilog HDL Declaration information at mode_uart_tx_alarm.v(36): object "kor_day" differs only in case from object "KOR_day" in the same scope File: E:/Teamproject/mode_uart_tx_alarm.v Line: 36
+Info (10281): Verilog HDL Declaration information at lcd_driver.v(32): object "state" differs only in case from object "STATE" in the same scope File: E:/Teamproject/lcd_driver.v Line: 32
